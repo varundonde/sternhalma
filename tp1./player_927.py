@@ -47,7 +47,7 @@ class Player:
 # The Jump Helper Trio: possibleJumps is a wrapper for dfsChain, which recursively finds all the possible positions to elsewhere
 # within dfsChain, there is a helper method that calculates the jumps at a specified node, called jumpList
 # jumpList does the legal checks for whether a jump can be made from a certain spot 
-# 
+
     def jumpList(self, piece, board, seen):
         self.board = board
         jumpSet = []
@@ -70,7 +70,9 @@ class Player:
             return None
         else:
             return jumpSet
-                        
+    # CITATION: Implementation, ideas and general understanding of graph traversal found on YouTube: https://www.youtube.com/watch?v=PMMc4VsIacU&ab_channel=Reducible
+    # CITATION: Geeks for Geeks DFS Source Code: https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/ (heavily edited in the case of jumping)
+    # Diagram for understanding of graph provided on design documents for TP1
     def dfsChain(self, board, root, seen, jumps):
         self.board = board
         row, col = root[0], root[1]
