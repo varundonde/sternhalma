@@ -90,6 +90,7 @@ def isLegal(app, player, nextSquare, currSquare):
     else:
         return False
 
+# CITATION - 15-112 Student Soham Khatavkar helped me come up with the idea to swtich from coordinate axis to board indices rather than creating psuedo board
 def getCell(app, x, y):
     col = x // getCellSize(app)[0]
     row = y // getCellSize(app)[1]
@@ -107,9 +108,6 @@ def drawPotentialPositions(app, piece):
     potentialPieces = app.turn.getPossibleMoveListForPiece(piece, app.playerBoard)
     for piece in potentialPieces:
         drawCell(app, piece[0], piece[1], 'lightGreen')
-
-""" def drawPotentialHelper(app, row, col, board):
-    drawCircle(row * getCellSize(app)[0], col * getCellSize(app)[1], 10, fill = 'lightGreen') """
 
 def drawPieces(app):
     for row in range(len(app.playerBoard)):
