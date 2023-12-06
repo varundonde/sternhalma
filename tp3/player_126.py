@@ -1,5 +1,5 @@
-from main_121 import *
-from minimax_121 import *
+from main_126 import *
+from minimax_126 import *
 import copy
 
 class Player:
