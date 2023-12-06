@@ -1,9 +1,9 @@
 from cmu_graphics import *
 import math
 import copy
-from player_121 import *
-from randomAI_121 import *
-from minimax_121 import *
+from player_126 import *
+from randomAI_126 import *
+from minimax_126 import *
 
 def onAppStart(app):
     app.width = 440 
