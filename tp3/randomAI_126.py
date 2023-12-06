@@ -1,5 +1,5 @@
-from main_121 import *
-from player_121 import *
+from main_126 import *
+from player_126 import *
 import copy
 import random
 
