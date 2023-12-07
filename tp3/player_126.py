@@ -74,9 +74,9 @@ class Player:
         elif player == app.player2:
             for searchTuple in app.endZone2:
                 row, col = searchTuple[0], searchTuple[1]
-                if board[row][col] == 2 and row >= 9:
+                if board[row][col] == 2 and row >= 8:
                     selfCount += 1
-                elif board[row][col] == 1 and row >= 9:
+                elif board[row][col] == 1 and row >= 8:
                     otherCount += 1
     
         if otherCount == 6:
